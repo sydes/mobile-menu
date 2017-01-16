@@ -1,0 +1,18 @@
+{
+  "name": "sydes/mobile-menu",
+  "description": "Plugin adds mobile menu to any SyDES theme",
+  "version": "1.0",
+  "type": "sydes-module",
+  "keywords": ["sydes", "plugin"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "ArtyGrand",
+      "email": "artygrand@gmail.com",
+      "homepage": "http://artygrand.ru"
+    }
+  ],
+  "require": {
+    "composer/installers": "~1.0"
+  }
+}
