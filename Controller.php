@@ -25,7 +25,7 @@ class Controller
             'render.before',
             'front/*',
             function (Document &$doc) {
-                $assets = assetsDir('mobile_menu');
+                $assets = assetsDir('mobile-menu');
                 $doc->addPackage('mobile-menu', $assets.'/js/mobile-menu.min.js', $assets.'/css/mobile-menu.min.css');
 
                 $doc->addJs('mobile-menu-init', '$(\'.to-mobile\').toMobileMenu();');
