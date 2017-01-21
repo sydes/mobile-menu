@@ -1,5 +1,5 @@
 <?php
-namespace Module\Mobile_menu;
+namespace Module\MobileMenu;
 
 use App\Cmf;
 use App\Document;
@@ -10,7 +10,7 @@ class Controller
 	public function install()
     {
          Cmf::installModule('mobile-menu', [
-            'handlers' => ['Module\\Mobile_menu\\Controller::handler'],
+            'handlers' => ['Module\\MobileMenu\\Controller::handler'],
          ]);
     }
 
