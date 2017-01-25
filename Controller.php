@@ -7,14 +7,14 @@ use App\Event;
 
 class Controller
 {
-	public function install()
+    public function install()
     {
          Cmf::installModule('mobile-menu', [
             'handlers' => ['Module\\MobileMenu\\Controller::handler'],
          ]);
     }
 
-	public function uninstall()
+    public function uninstall()
     {
         Cmf::uninstallModule('mobile-menu');
     }
