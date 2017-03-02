@@ -1,30 +1,17 @@
 <?php
 namespace Module\MobileMenu;
 
-use App\Cmf;
 use App\Document;
 use App\Event;
 
-class Controller
+class Handlers
 {
-    public function install()
-    {
-         Cmf::installModule('mobile-menu', [
-            'handlers' => ['Module\\MobileMenu\\Controller::handler'],
-         ]);
-    }
-
-    public function uninstall()
-    {
-        Cmf::uninstallModule('mobile-menu');
-    }
-
-    public static function handler(Event $events)
+    public function __construct(Event $events)
     {
         $events->on(
-            'render.before',
+            'render.started',
             'front/*',
-            function (Document &$doc) {
+            function (Document $doc) {
                 $assets = assetsDir('mobile-menu');
                 $doc->addPackage('mobile-menu', $assets.'/js/mobile-menu.min.js', $assets.'/css/mobile-menu.min.css');
 
