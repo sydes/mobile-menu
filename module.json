@@ -1,0 +1,12 @@
+{
+  "name": "Mobile menu",
+  "description": "Plugin adds mobile menu to any SyDES theme",
+  "version": "1.0",
+  "keywords": ["plugin", "for theme"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "ArtyGrand"
+    }
+  ]
+}
