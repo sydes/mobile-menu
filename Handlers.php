@@ -15,7 +15,7 @@ class Handlers
                 $assets = assetsDir('mobile-menu');
                 $doc->addPackage('mobile-menu', $assets.'/js/mobile-menu.min.js', $assets.'/css/mobile-menu.min.css');
 
-                $doc->addJs('mobile-menu-init', '$(\'.to-mobile\').toMobileMenu();');
+                $doc->addScript('mobile-menu-init', '$(\'.to-mobile\').toMobileMenu();');
             }
         );
     }
